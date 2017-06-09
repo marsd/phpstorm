@@ -1,0 +1,17 @@
+<application>
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b18eb277-152a-45fe-9688-869c9e9144cf" name="Grapevine" url="http://api.ripplette.dev">
+        <fileTransfer accessType="LOCAL" />
+      </webServer>
+      <webServer id="26842eea-ce84-4a98-9454-45a0ea730694" name="Grapevine DO" url="http://grapevine.ripplewerkz.co">
+        <fileTransfer host="grapevine.ripplewerkz.co" port="22" rootFolder="/var/www/grapevine.ripplewerkz.co/grapevine" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" maxConnections="10" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</application>
