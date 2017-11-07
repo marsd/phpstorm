@@ -7,7 +7,7 @@
   <component name="PhpInterpretersPhpInfoCache">
     <phpInfoCache>
       <interpreter name="PHP 7">
-        <phpinfo binary_type="PHP" php_cgi="C:\Wnmp\php\php-cgi.exe" php_cli="C:\Wnmp\php\php.exe" path_separator=";" version="7.0.6">
+        <phpinfo binary_type="PHP" php_cgi="C:\Wnmp\php\php-cgi.exe" php_cli="C:\Wnmp\php\php.exe" path_separator=";" version="7.1.8">
           <additional_php_ini />
           <configuration_file>C:\Wnmp\php\php.ini</configuration_file>
           <configuration_options>
@@ -28,6 +28,8 @@
             <configuration_option name="auto_prepend_file" value="" />
             <configuration_option name="bcmath.scale" value="0" />
             <configuration_option name="browscap" value="" />
+            <configuration_option name="cli.pager" value="" />
+            <configuration_option name="cli.prompt" value="\b \&gt; " />
             <configuration_option name="curl.cainfo" value="C:\Wnmp\contrib\cacert.pem" />
             <configuration_option name="date.default_latitude" value="31.7667" />
             <configuration_option name="date.default_longitude" value="35.2333" />
@@ -56,14 +58,14 @@
             <configuration_option name="exif.decode_unicode_motorola" value="UCS-2BE" />
             <configuration_option name="exif.encode_jis" value="" />
             <configuration_option name="exif.encode_unicode" value="ISO-8859-15" />
-            <configuration_option name="exit_on_timeout" value="0" />
             <configuration_option name="expose_php" value="1" />
             <configuration_option name="extension_dir" value="ext" />
             <configuration_option name="file_uploads" value="1" />
             <configuration_option name="filter.default" value="unsafe_raw" />
             <configuration_option name="filter.default_flags" value="" />
             <configuration_option name="from" value="" />
-            <configuration_option name="gd.jpeg_ignore_warning" value="0" />
+            <configuration_option name="gd.jpeg_ignore_warning" value="1" />
+            <configuration_option name="hard_timeout" value="2" />
             <configuration_option name="highlight.comment" value="#FF8000" />
             <configuration_option name="highlight.default" value="#0000BB" />
             <configuration_option name="highlight.html" value="#000000" />
@@ -80,9 +82,6 @@
             <configuration_option name="include_path" value=".;C:\php\pear" />
             <configuration_option name="input_encoding" value="" />
             <configuration_option name="internal_encoding" value="" />
-            <configuration_option name="intl.default_locale" value="" />
-            <configuration_option name="intl.error_level" value="0" />
-            <configuration_option name="intl.use_exceptions" value="0" />
             <configuration_option name="log_errors" value="1" />
             <configuration_option name="log_errors_max_len" value="1024" />
             <configuration_option name="mail.add_x_header" value="1" />
@@ -105,7 +104,7 @@
             <configuration_option name="mbstring.substitute_character" value="" />
             <configuration_option name="mcrypt.algorithms_dir" value="" />
             <configuration_option name="mcrypt.modes_dir" value="" />
-            <configuration_option name="memory_limit" value="512M" />
+            <configuration_option name="memory_limit" value="128M" />
             <configuration_option name="mysqli.allow_local_infile" value="1" />
             <configuration_option name="mysqli.allow_persistent" value="1" />
             <configuration_option name="mysqli.default_host" value="" />
@@ -131,8 +130,8 @@
             <configuration_option name="opcache.blacklist_filename" value="" />
             <configuration_option name="opcache.consistency_checks" value="0" />
             <configuration_option name="opcache.dups_fix" value="0" />
-            <configuration_option name="opcache.enable" value="0" />
-            <configuration_option name="opcache.enable_cli" value="0" />
+            <configuration_option name="opcache.enable" value="1" />
+            <configuration_option name="opcache.enable_cli" value="1" />
             <configuration_option name="opcache.enable_file_override" value="0" />
             <configuration_option name="opcache.error_log" value="" />
             <configuration_option name="opcache.fast_shutdown" value="1" />
@@ -145,19 +144,21 @@
             <configuration_option name="opcache.inherited_hack" value="1" />
             <configuration_option name="opcache.interned_strings_buffer" value="8" />
             <configuration_option name="opcache.log_verbosity_level" value="1" />
-            <configuration_option name="opcache.max_accelerated_files" value="4000" />
+            <configuration_option name="opcache.max_accelerated_files" value="20000" />
             <configuration_option name="opcache.max_file_size" value="0" />
             <configuration_option name="opcache.max_wasted_percentage" value="5" />
-            <configuration_option name="opcache.memory_consumption" value="128" />
+            <configuration_option name="opcache.memory_consumption" value="512" />
             <configuration_option name="opcache.mmap_base" value="" />
+            <configuration_option name="opcache.opt_debug_level" value="0" />
             <configuration_option name="opcache.optimization_level" value="0x7FFFBFFF" />
             <configuration_option name="opcache.preferred_memory_model" value="" />
             <configuration_option name="opcache.protect_memory" value="0" />
             <configuration_option name="opcache.restrict_api" value="" />
-            <configuration_option name="opcache.revalidate_freq" value="60" />
+            <configuration_option name="opcache.revalidate_freq" value="5" />
             <configuration_option name="opcache.revalidate_path" value="0" />
             <configuration_option name="opcache.save_comments" value="1" />
             <configuration_option name="opcache.use_cwd" value="1" />
+            <configuration_option name="opcache.validate_permission" value="0" />
             <configuration_option name="opcache.validate_timestamps" value="1" />
             <configuration_option name="open_basedir" value="" />
             <configuration_option name="openssl.cafile" value="" />
@@ -176,7 +177,7 @@
             <configuration_option name="post_max_size" value="8M" />
             <configuration_option name="precision" value="14" />
             <configuration_option name="raphf.persistent_handle.limit" value="-1" />
-            <configuration_option name="realpath_cache_size" value="16K" />
+            <configuration_option name="realpath_cache_size" value="4096K" />
             <configuration_option name="realpath_cache_ttl" value="120" />
             <configuration_option name="register_argc_argv" value="1" />
             <configuration_option name="report_memleaks" value="1" />
@@ -193,19 +194,19 @@
             <configuration_option name="session.cookie_lifetime" value="0" />
             <configuration_option name="session.cookie_path" value="/" />
             <configuration_option name="session.cookie_secure" value="" />
-            <configuration_option name="session.entropy_file" value="" />
-            <configuration_option name="session.entropy_length" value="0" />
             <configuration_option name="session.gc_divisor" value="1000" />
             <configuration_option name="session.gc_maxlifetime" value="1440" />
             <configuration_option name="session.gc_probability" value="1" />
-            <configuration_option name="session.hash_bits_per_character" value="5" />
-            <configuration_option name="session.hash_function" value="0" />
             <configuration_option name="session.lazy_write" value="1" />
             <configuration_option name="session.name" value="PHPSESSID" />
             <configuration_option name="session.referer_check" value="" />
             <configuration_option name="session.save_handler" value="files" />
             <configuration_option name="session.save_path" value="" />
             <configuration_option name="session.serialize_handler" value="php" />
+            <configuration_option name="session.sid_bits_per_character" value="4" />
+            <configuration_option name="session.sid_length" value="32" />
+            <configuration_option name="session.trans_sid_hosts" value="" />
+            <configuration_option name="session.trans_sid_tags" value="a=href,area=href,frame=src,form=" />
             <configuration_option name="session.upload_progress.cleanup" value="1" />
             <configuration_option name="session.upload_progress.enabled" value="1" />
             <configuration_option name="session.upload_progress.freq" value="1%" />
@@ -226,12 +227,32 @@
             <configuration_option name="unserialize_callback_func" value="" />
             <configuration_option name="upload_max_filesize" value="2M" />
             <configuration_option name="upload_tmp_dir" value="" />
+            <configuration_option name="url_rewriter.hosts" value="" />
             <configuration_option name="url_rewriter.tags" value="a=href,area=href,frame=src,input=src,form=fakeentry" />
             <configuration_option name="user_agent" value="" />
             <configuration_option name="user_dir" value="" />
             <configuration_option name="user_ini.cache_ttl" value="300" />
             <configuration_option name="user_ini.filename" value=".user.ini" />
             <configuration_option name="variables_order" value="GPCS" />
+            <configuration_option name="wincache.apppoolid" value="" />
+            <configuration_option name="wincache.chkinterval" value="30" />
+            <configuration_option name="wincache.debuglevel" value="0" />
+            <configuration_option name="wincache.enablecli" value="0" />
+            <configuration_option name="wincache.fcachesize" value="24" />
+            <configuration_option name="wincache.fcenabled" value="1" />
+            <configuration_option name="wincache.fcenabledfilter" value="" />
+            <configuration_option name="wincache.fcndetect" value="1" />
+            <configuration_option name="wincache.filecount" value="4096" />
+            <configuration_option name="wincache.filemapdir" value="" />
+            <configuration_option name="wincache.ignorelist" value="" />
+            <configuration_option name="wincache.localheap" value="0" />
+            <configuration_option name="wincache.maxfilesize" value="256" />
+            <configuration_option name="wincache.namesalt" value="" />
+            <configuration_option name="wincache.reroute_enabled" value="0" />
+            <configuration_option name="wincache.scachesize" value="8" />
+            <configuration_option name="wincache.ttlmax" value="1200" />
+            <configuration_option name="wincache.ucachesize" value="8" />
+            <configuration_option name="wincache.ucenabled" value="1" />
             <configuration_option name="windows.show_crt_warning" value="0" />
             <configuration_option name="xmlrpc_error_number" value="0" />
             <configuration_option name="xmlrpc_errors" value="0" />
@@ -264,13 +285,13 @@
             <extension name="fileinfo" />
             <extension name="filter" />
             <extension name="gd" />
-            <extension name="gettext" />
+            <extension name="gender" />
             <extension name="hash" />
             <extension name="iconv" />
             <extension name="imap" />
-            <extension name="intl" />
             <extension name="json" />
             <extension name="libxml" />
+            <extension name="lzf" />
             <extension name="mbstring" />
             <extension name="mcrypt" />
             <extension name="mysqli" />
@@ -278,16 +299,19 @@
             <extension name="openssl" />
             <extension name="pcre" />
             <extension name="pdo_mysql" />
+            <extension name="pdo_pgsql" />
             <extension name="pdo_sqlite" />
             <extension name="phpdbg_webhelper" />
             <extension name="propro" />
             <extension name="raphf" />
+            <extension name="readline" />
             <extension name="session" />
             <extension name="sockets" />
             <extension name="standard" />
             <extension name="tidy" />
             <extension name="tokenizer" />
             <extension name="wddx" />
+            <extension name="wincache" />
             <extension name="xml" />
             <extension name="xmlreader" />
             <extension name="xmlwriter" />
