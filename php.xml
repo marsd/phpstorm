@@ -7,7 +7,7 @@
   <component name="PhpInterpretersPhpInfoCache">
     <phpInfoCache>
       <interpreter name="PHP 7">
-        <phpinfo binary_type="PHP" php_cgi="C:\Wnmp\php\php-cgi.exe" php_cli="C:\Wnmp\php\php.exe" path_separator=";" version="7.1.8">
+        <phpinfo binary_type="PHP" php_cgi="C:\Wnmp\php\php-cgi.exe" php_cli="C:\Wnmp\php\php.exe" path_separator=";" version="7.1.8" warning="PHP Warning:  PHP Startup: intl: Unable to initialize module&#10;Module compiled with build ID=API20160303,NTS,VC15&#10;PHP    compiled with build ID=API20160303,NTS,VC14&#10;These options need to match&#10; in Unknown on line 0&#10;">
           <additional_php_ini />
           <configuration_file>C:\Wnmp\php\php.ini</configuration_file>
           <configuration_options>
