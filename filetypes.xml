@@ -2,6 +2,7 @@
   <component name="FileTypeManager" version="17">
     <extensionMap>
       <removed_mapping pattern=".env" type=".env file" />
+      <mapping pattern="gitignore_global.txt" type="Git file" />
       <mapping pattern="sections_footer" type="HTML" />
       <mapping ext="hb" type="HTML" />
       <mapping ext="eml" type="HTML" />
