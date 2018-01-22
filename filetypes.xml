@@ -6,6 +6,7 @@
       <mapping pattern="sections_footer" type="HTML" />
       <mapping ext="hb" type="HTML" />
       <mapping ext="eml" type="HTML" />
+      <mapping pattern="GetLeads" type="PLAIN_TEXT" />
       <mapping pattern="sections_footer.hb" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
