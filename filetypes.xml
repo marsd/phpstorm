@@ -10,6 +10,7 @@
       <mapping pattern="addservice.bat" type="PLAIN_TEXT" />
       <mapping pattern="GetLeads" type="PLAIN_TEXT" />
       <mapping pattern="sections_footer.hb" type="PLAIN_TEXT" />
+      <mapping ext="map" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
