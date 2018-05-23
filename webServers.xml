@@ -15,6 +15,9 @@
       <webServer id="ed10c6f7-933d-4c33-b68f-ae431c32ca76" name="Monday CMS" url="https://mondaycms.local">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="3d1de317-f24c-431b-80de-8e4459a38962" name="Monday JS" url="http://mondayjs.local/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
