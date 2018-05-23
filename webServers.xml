@@ -12,6 +12,9 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="ed10c6f7-933d-4c33-b68f-ae431c32ca76" name="Monday CMS" url="https://mondaycms.local">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
