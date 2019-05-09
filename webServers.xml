@@ -18,6 +18,9 @@
       <webServer id="3d1de317-f24c-431b-80de-8e4459a38962" name="Monday JS" url="http://mondayjs.local/">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="a140b919-4461-45a5-af96-e86904ec9a03" name="Tesuto Laragon" url="http://tesuto.local">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
